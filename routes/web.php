@@ -23,3 +23,18 @@ Route::get('Praktikum2', function () {
 Route::get('ETS', "ViewController@showETS");
 Route::get('TugasPHP', "ViewController@showTugasPHP");
 Route::get('kode', "ViewController@showkode");
+//route CRUD pegawai
+Route::get('/pegawai','PegawaiController@index');
+Route::get('/pegawai/tambah','PegawaiController@tambah');
+Route::post('/pegawai/store','PegawaiController@store');
+Route::get('/pegawai/edit/{id}','PegawaiController@edit');
+Route::post('/pegawai/update','PegawaiController@update');
+Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+//route CRUD pendapatan
+Route::get('/pendapatan','PendapatanController@index');
+Route::get('/pendapatan/tambah','PendapatanController@tambah');
+Route::post('/pendapatan/store','PendapatanController@store');
+Route::get('/pendapatan/edit/{id}','PendapatanController@edit');
+Route::post('/pendapatan/update','PendapatanController@update');
+Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
+
