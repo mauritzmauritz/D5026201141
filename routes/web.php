@@ -37,4 +37,8 @@ Route::post('/pendapatan/store','PendapatanController@store');
 Route::get('/pendapatan/edit/{id}','PendapatanController@edit');
 Route::post('/pendapatan/update','PendapatanController@update');
 Route::get('/pendapatan/hapus/{id}','PendapatanController@hapus');
-
+//route CRUD keranjangbelanja
+Route::get('/keranjangbelanja','KeranjangbelanjaController@index');
+Route::get('/keranjangbelanja/tambah','KeranjangbelanjaController@tambah');
+Route::post('/keranjangbelanja/store','KeranjangbelanjaController@store');
+Route::get('/keranjangbelanja/hapus/{id}','KeranjangbelanjaController@hapus');
